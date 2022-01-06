@@ -4,11 +4,6 @@
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-body {
-  /* margin: 60px auto; */
-  /* max-width: 800px; */
-}
-
 h1 {
   font-size: 96px;
 }
@@ -26,6 +21,7 @@ p {
   border-radius: 4px;
   font-size: 16px;
   line-height: 1.5;
+  margin-bottom: 1rem;
 }
 
 .navigation-links {
@@ -82,4 +78,29 @@ p {
 
 .shadow {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  .project-link {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
+  }
+}
+
+.primary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
 }
